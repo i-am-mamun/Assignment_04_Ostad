@@ -25,7 +25,7 @@ class Manager extends Employee {
   void displayDetails() {
     print('Manager Details:');
     print('Name: $name');
-    print('Salary: \$${salary}');
+    print('Salary: Tk ${salary}');
     print('Department: $department');
   }
 }
@@ -39,7 +39,7 @@ class Developer extends Employee {
   void displayDetails() {
     print('Developer Details:');
     print('Name: $name');
-    print('Salary: \$${salary}');
+    print('Salary: Tk ${salary}');
     print('Programming Language: $programmingLanguage');
   }
 }
@@ -74,20 +74,20 @@ class Light extends Appliance {
 }
 
 void main() {
-  Book book1 = Book('1984', 'George Orwell', 20.0);
-  Book book2 = Book('To Kill a Mockingbird', 'Harper Lee', 15.0);
+  Book book1 = Book('1984', 'George Orwell', 250.0);
+  Book book2 = Book('To Kill a Mockingbird', 'Harper Lee', 350.0);
 
   print('Book 1 Details:');
   print('Title: ${book1.title}');
   print('Author: ${book1.author}');
-  print('Original Price: \$${book1.price}');
-  print('Discounted Price (10%): \$${book1.discountedPrice(10)}');
+  print('Original Price: Tk ${book1.price}');
+  print('Discounted Price (10%): Tk ${book1.discountedPrice(10)}');
 
   print('\nBook 2 Details:');
   print('Title: ${book2.title}');
   print('Author: ${book2.author}');
-  print('Original Price: \$${book2.price}');
-  print('Discounted Price (15%): \$${book2.discountedPrice(15)}');
+  print('Original Price: Tk ${book2.price}');
+  print('Discounted Price (15%): Tk ${book2.discountedPrice(15)}');
 
   print('\n----------------------------------------\n');
 
