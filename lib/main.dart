@@ -73,4 +73,41 @@ class Light extends Appliance {
   }
 }
 
-void main() {}
+void main() {
+  Book book1 = Book('1984', 'George Orwell', 20.0);
+  Book book2 = Book('To Kill a Mockingbird', 'Harper Lee', 15.0);
+
+  print('Book 1 Details:');
+  print('Title: ${book1.title}');
+  print('Author: ${book1.author}');
+  print('Original Price: \$${book1.price}');
+  print('Discounted Price (10%): \$${book1.discountedPrice(10)}');
+
+  print('\nBook 2 Details:');
+  print('Title: ${book2.title}');
+  print('Author: ${book2.author}');
+  print('Original Price: \$${book2.price}');
+  print('Discounted Price (15%): \$${book2.discountedPrice(15)}');
+
+  print('\n----------------------------------------\n');
+
+  Manager manager = Manager('Alice Johnson', 85000.0, 'Engineering');
+  manager.displayDetails();
+
+  print('');
+
+  Developer developer = Developer('Bob Smith', 65000.0, 'Dart');
+  developer.displayDetails();
+
+  print('\n----------------------------------------\n');
+
+  Fan fan = Fan();
+  fan.turnOn();
+  fan.turnOff();
+
+  print('');
+
+  Light light = Light();
+  light.turnOn();
+  light.turnOff();
+}
